@@ -7,21 +7,12 @@ public TreeChecker{
      }
 
     boolean checkBST(Node root) {
-        ArrayList<Node> a = new ArrayList<>();
-        inorder(root);
-        int prev = -1;
-        for(Node n: a){
-            if(n.data >= prev) return false;
-        }
-        return true;
+
     }
 
-    void inorder(Node n){
-        if(n == null){
-            return;
-        }
-        inorder(n.left);
-        a.add(node);
-        inorder(n.right);
+    boolean check(Node r, Node n ,Node l){
+        if(r.left)
+        
+        return check(r.data < n.data && n.data < l.data) && check(r.data < n.data && n.data < l.data);
     }
 }
